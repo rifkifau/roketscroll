@@ -1,0 +1,173 @@
+body{
+  background: rgb(18, 172, 230);
+  width: 100%
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+}
+
+footer:hover{
+  color: rgb(51, 150, 199)
+}
+.tombol{
+  position: fixed;
+  top: 7px;
+}
+
+#awan1, #awan01, #awan11, #awan31{
+  position: relative;
+  z-index: 0;
+  animation: push ease 5s alternate infinite;
+  animation-delay: 1s;
+}
+
+#awan2, #awan02, #awan12, #awan32{
+  position: relative;
+  z-index: 1;
+  animation: push2 ease 20s alternate infinite;
+  animation-delay: 1s;
+}
+
+#awan3, #awan03, #awan13, #awan33{
+  position: relative;
+  z-index: 3;
+  right:50%;
+  top: 150px;
+  animation: push ease 7.5s alternate infinite;
+  animation-delay: 1s;
+}
+
+#awan4, #awan04, #awan14, #awan34{
+  position: relative;
+  z-index: 0;
+  right:30%;
+  top: 200px;
+  animation: push2 ease 15s alternate infinite;
+  animation-delay: 1s;
+}
+
+#awan5, #awan05, #awan15, #awan35{
+  position: relative;
+  z-index: 2;
+  right:60%;
+  top: 250px;
+  animation: push2 ease 25s alternate infinite;
+  animation-delay: 1s;
+}
+
+#awan6, #awan06, #awan16, #awan36{
+  position: relative;
+  z-index: 2;
+  right:70%;
+  top: 300px;
+  animation: push ease 15s alternate infinite;
+  animation-delay: 1s;
+}
+
+#awan7, #awan07, #awan17, #awan37{
+  position: relative;
+  z-index: 0;
+  right:80%;
+  top: 400px;
+  animation: push ease 4s alternate infinite;
+  animation-delay: 1s;
+}
+
+#awan8, #awan08, #awan18, #awan38{
+  position: relative;
+  z-index: 1;
+  right:90%;
+  top: 450px;
+  animation: push ease 20s alternate infinite;
+  animation-delay: 1s;
+}
+
+@keyframes push {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  50% {
+    left: -100px;
+    top: 100px;
+  }
+  100% {
+    top: 50px;
+    left: 50px;
+  }
+}
+
+@keyframes push2 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: -75px;
+    top: 75px;
+  }
+  50% {
+    left: -100px;
+    top: 100px;
+  }
+  75% {
+    left: -25px;
+    top: 25px;
+  }
+  100% {
+    top: 50px;
+    left: 50px;
+  }
+}
+
+#rocket{
+  position: fixed;
+  height: 150px;
+  width: auto;
+  z-index: 1;
+  bottom: 10%;
+  left: 50%;
+  animation: roket 10s infinite;
+}
+#rocket1{
+  position: fixed;
+  height: 100px;
+  width: auto;
+  z-index: 1;
+  bottom: 20%;
+  left: 20%;
+  animation: roket 10s infinite;
+}
+#rocket2{
+  position: fixed;
+  height: 50px;
+  width: auto;
+  z-index: 1;
+  bottom: 20%;
+  left: 85%;
+  animation: roket 10s infinite;
+}
+
+#rocket3{
+  position: fixed;
+  height: 20px;
+  width: auto;
+  z-index: 0;
+  bottom: 20%;
+  left: 10%;
+  animation: roket 10s infinite;
+}
+
+@keyframes roket {
+  0% {
+    bottom: 0;
+  }
+
+  100% {
+    bottom: 550px;
+  }
+}
